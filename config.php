@@ -9,11 +9,9 @@ $port = "19938";
 
 
 $link = "mysql:host=$host;dbname=$db;port=$port";
-try {
-     $pdo = new \PDO($dsn, $user, $pass);
-     echo "Connected successfully";
-} catch (\PDOException $e) {
-     echo "Connection failed: " . $e->getMessage();
+
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
 ?>
