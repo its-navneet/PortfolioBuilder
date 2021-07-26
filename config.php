@@ -10,8 +10,6 @@ $port = "19938";
 
 $link = "mysql:host=$host;dbname=$db;port=$port";
 
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+
 
 ?>
