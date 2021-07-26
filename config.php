@@ -1,12 +1,12 @@
 <?php
-$servername = "mysql-40976-0.cloudclusters.net";
-$username = "admin";
-$password = "I7DUlO18";
+$dbservername = "mysql-40976-0.cloudclusters.net";
+$dbusername = "admin";
+$dbpassword = "I7DUlO18";
 $dbname   = "PortfolioBuilder";
 $dbServerPort = "19938";
 
 // Create connection
-$link = new mysqli($servername, $username, $password, $dbname, $dbServerPort,);
+$link = new mysqli($dbservername, $dbusername, $dbpassword, $dbname, $dbServerPort,);
 
 // Check connection
 if (!$link) {
