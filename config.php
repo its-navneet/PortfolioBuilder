@@ -5,7 +5,7 @@ $db   = 'PortfolioBuilder';
 $user = 'admin';
 $pass = 'I7DUlO18';
 $port = "19938";
-$charset = 'utf8mb4';
+$charset = 'utf8mb4_0900_ai_ci';
 
 $options = [
     \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
