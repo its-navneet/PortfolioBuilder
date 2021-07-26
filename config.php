@@ -5,7 +5,7 @@ $db   = 'PortfolioBuilder';
 $user = 'admin';
 $pass = 'your password';
 $port = "19938";
-$charset = 'utf8mb4';
+$charset = 'utf8mb4_0900_ai_ci';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset;port=$port";
 try {
