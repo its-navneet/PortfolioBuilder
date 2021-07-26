@@ -1,15 +1,16 @@
 <?php
+$servername = "mysql-40976-0.cloudclusters.net";
+$username = "admin";
+$password = "I7DUlO18";
+$dbname   = "PortfolioBuilder";
+$dbServerPort = "19938";
 
-$host = 'mysql-40976-0.cloudclusters.net';
-$db   = 'PortfolioBuilder';
-$user = 'admin';
-$pass = 'I7DUlO18';
-$port = "19938";
+// Create connection
+$link = new mysqli($servername, $username, $password, $dbname, $dbServerPort,);
 
-
-
-$link = "mysql:host=$host;dbname=$db;port=$port";
-
-
-
+// Check connection
+if (!$link) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
 ?>
