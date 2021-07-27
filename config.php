@@ -1,7 +1,7 @@
 <?php
 $dbservername = "mysql-40976-0.cloudclusters.net";
-$dbusername = "admin";
-$dbpassword = "I7DUlO18";
+$dbusername = "newUser";
+$dbpassword = "navneet2000";
 $dbname   = "PortfolioBuilder";
 $dbServerPort = "19938";
 
