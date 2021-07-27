@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("223.187.92.226", "navneet", "Navneet@2000", "PortfolioBuilder");
+$link = mysqli_connect("181.215.242.82", "admin", "I7DUlO18", "PortfolioBuilder");
 if(mysqli_connect_errno()){
     echo mysqli_connect_errno();
     die();
