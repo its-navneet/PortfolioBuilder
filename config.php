@@ -1,19 +1,17 @@
 <?php
-/*
-This file contains database configuration assuming you are running mysql using user "root" and password ""
-*/
+<?php
+$servername = "mysql-40976-0.cloudclusters.net";
+$dbusername = "admin";
+$dbpassword = "I7DUlO18";
+$dbname   = "PortfolioBuilder";
+$dbServerPort = "19938";
 
-define('DB_SERVER', '181.215.242.82');
-define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', 'I7DUlO18');
-define('DB_NAME', 'PortfolioBuilder');
+// Create connection
+$link = new mysqli($servername, $dbusername, $dbpassword, $dbname, $dbServerPort,);
 
-// Try connecting to the Database
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
-
- 
 // Check connection
-if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
+if (!$link) {
+    die("Connection failed: " . mysqli_connect_error());
 }
+echo "Connected successfully";
 ?>
