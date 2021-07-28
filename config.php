@@ -3,7 +3,7 @@
 This file contains database configuration assuming you are running mysql using user "root" and password ""
 */
 
-define('DB_SERVER', 'mysql-40976-0.cloudclusters.net');
+define('DB_SERVER', 'mysql-40976-db.mysql-40976:19938');
 define('DB_USERNAME', 'admin');
 define('DB_PASSWORD', 'I7DUlO18');
 define('DB_NAME', 'PortfolioBuilder');
