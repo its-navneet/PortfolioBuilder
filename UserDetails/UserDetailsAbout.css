@@ -18,7 +18,7 @@ textarea {
   min-height: 100vh;
   padding: 2rem;
   background-color: #fafafa;
-  overflow: hidden;
+  overflow: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,7 +86,7 @@ option{
 form {
   padding: 1.5rem 2rem;
   z-index: 10;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
