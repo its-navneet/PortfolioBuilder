@@ -365,6 +365,7 @@ textarea.input {
   form,
   .contact-info {
     padding: 1.7rem 1.6rem;
+    overflow: auto;
   }
 
   .text,
