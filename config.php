@@ -1,17 +1,19 @@
 <?php
-<?php
-$servername = "mysql-40976-0.cloudclusters.net";
-$dbusername = "admin";
-$dbpassword = "I7DUlO18";
-$dbname   = "PortfolioBuilder";
-$dbServerPort = "19938";
+/*
+This file contains database configuration assuming you are running mysql using user "root" and password ""
+*/
 
-// Create connection
-$link = new mysqli($servername, $dbusername, $dbpassword, $dbname, $dbServerPort,);
+define('DB_SERVER', 'sql300.epizy.com');
+define('DB_USERNAME', 'epiz_29185437');
+define('DB_PASSWORD', '6J6kLN3YRMCzcFE');
+define('DB_NAME', 'epiz_29185437_spectrumproject');
 
+// Try connecting to the Database
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+ 
 // Check connection
-if (!$link) {
-    die("Connection failed: " . mysqli_connect_error());
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-echo "Connected successfully";
 ?>
